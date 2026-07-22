@@ -2,3 +2,4 @@ data/
 *.csv
 *.xlsx
 .DS_Store
+res_data/revision/output_ctkr/PICseq/PICseq_analysed.h5ad
