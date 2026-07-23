@@ -16,7 +16,7 @@ listInput <- list(Collagens = allDBs$Ligand[which(allDBs$category=='Collagens')]
                   #Apoptosis = allDBs$Ligand[which(allDBs$category=='apoptosis')]
                   )
 
-pdf('../figures/revision/DBsUpset_new.pdf', width=6, height=4)
+pdf('../figures/revision/FS2/FS2G.pdf', width=6, height=4)
 upset(fromList(listInput), order.by = "freq", nintersects=NA, nsets=10)
 dev.off()
 

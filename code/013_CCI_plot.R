@@ -66,7 +66,7 @@ rownames(smaller_circle) <- fil_nodes
 
 # Plot
 subgraph_MF_pre_Jak2 <- add_not_connected_nodes(subgraph_MF_pre_Jak2, all_nodes)
-pdf("../figures/revision/CCI_MF.pdf", width = 4.5, height = 4.5)
+pdf("../figures/revision/MF/CCI_MF.pdf", width = 4.5, height = 4.5)
 new_plot_cci(subgraph_MF_pre_Jak2,
                   paste0("MF pre-treatment mutational interactions", " CCI"),
                   leg = FALSE,
@@ -94,7 +94,7 @@ dev.off()
 degree_Jak2 <- plot_bar_degree_cci(
   graph = subgraph_MF_pre_Jak2,
   plt_name = "MF_pre_Jak2",
-  path = "../figures/revision/",
+  path = "../figures/revision/MF/",
   colors = nichescol,
   weighted = TRUE   # set FALSE for raw connection counts instead of weighted strength
 )
@@ -110,7 +110,7 @@ write.csv(
 )
 
 comm_0_2=c('SPP1_Macrophages', 'MK_prog', 'SPP1_Macrophages_Mut', 'CD16_monocytes_Mut', 'Classical_monocytes_Mut', 'Inflammatory_CD14_monocytes_Mut', 'OLCs', 'Adipo_CAR')
-pdf('../figures/revision/sankey_Spp1Macs_CAR_niches_25ints_n.pdf', 18, 5)
+pdf('../figures/revision/F7/F7F.pdf', 18, 5)
 
 
 plot_sankey(lrobj_tbl = object_Jak2@tables$MF_pre_treatment, threshold=25, ligand_cluster=comm_0_2, receptor_cluster=comm_0_2)

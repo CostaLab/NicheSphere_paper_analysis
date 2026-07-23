@@ -98,7 +98,7 @@ ggplot(aux,
     plot.subtitle = element_text(hjust = 0.5)
   )
 
-ggsave(filename = paste("../figures/revision/PIC_seq_doublets_new_EVThpo_major", i,".pdf"), device = "pdf",width = 9,height = 10)
+ggsave(filename = paste("../figures/revision/F1/F1G",".pdf"), device = "pdf",width = 9,height = 10)
 }
 
 ####################
@@ -189,7 +189,7 @@ ggplot(aux,
     plot.subtitle = element_text(hjust = 0.5)
   )
 
-ggsave(filename = paste("../figures/revision/PIC_seq_singlets_EVThpo_major", i,".pdf"), device = "pdf",width = 9,height = 10)
+ggsave(filename = paste("../figures/revision/F1/F1D",".pdf"), device = "pdf",width = 9,height = 10)
 }
 
 

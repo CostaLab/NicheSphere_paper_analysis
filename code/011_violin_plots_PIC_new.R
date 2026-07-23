@@ -30,14 +30,14 @@ violin_p<-function(d, gene, ymax=5){
 dat<-read.csv('../res_data/revision/violin/Thpo_sing_violinData_imp_f.csv', row.names=1)
 
 violin_p(dat, gene='Thpo', ymax=0.35)
-ggsave(file="../figures/revision/Thpo_sing_violin_imp_f.pdf", width=7, height=4, dpi=300)
+ggsave(file="../figures/revision/FS1/FS1K_Thpo.pdf", width=7, height=4, dpi=300)
 
 ###
 
 dat<-read.csv('../res_data/revision/violin/Mpl_sing_violinData_imp_f.csv', row.names=1)
 
 violin_p(dat, gene='Mpl', ymax=0.35)
-ggsave(file="../figures/revision/Mpl_sing_violin_imp_f.pdf", width=7, height=4, dpi=300)
+ggsave(file="../figures/revision/FS1/FS1K_Mpl.pdf", width=7, height=4, dpi=300)
 
 ###
 
@@ -81,36 +81,11 @@ dat<-read.csv('../res_data/revision/violin/Il1b_doub_violinData_imp_f.csv', row.
 
 p2=violin_p(dat, gene='Il1b', min_ratio = 1, ymax=1.5)
 p1/p2
-ggsave(file="../figures/revision/Il1b_sing_doub_violin_imp_f.pdf", width=4, height=6, dpi=300)
+ggsave(file="../figures/revision/FS5/FS5D.pdf", width=4, height=6, dpi=300)
 
 ###
 
-###
 
-dat<-read.csv('../res_data/revision/violin/S100a9_sing_violinData_imp_f.csv', row.names=1)
-
-p1=violin_p(dat, gene='S100a9', min_ratio = 0, ymax=10)
-
-###
-
-dat<-read.csv('../res_data/revision/violin/S100a9_doub_violinData_imp_f.csv', row.names=1)
-
-p2=violin_p(dat, gene='S100a9', min_ratio = 0, ymax=10)
-p1/p2
-ggsave(file="../figures/revision/S100a9_sing_doub_violin_imp_f.pdf", width=4, height=6, dpi=300)
-
-###
-
-dat1<-read.csv('../res_data/revision/violin/Pf4_sing_violinData_imp_f.csv', row.names=1)
-dat2<-read.csv('../res_data/revision/violin/Pf4_doub_violinData_imp_f.csv', row.names=1)
-
-p1=violin_p(dat1, gene="Pf4", min_ratio = 1, ymax=1.5)
-p2=violin_p(dat2, gene="Pf4", min_ratio = 1, ymax=1.5)
-
-p1/p2
-ggsave(file="../figures/revision/Pf4_sing_doub_violin_imp_f.pdf", width=4, height=6, dpi=300)
-
-###
 
 violin_p<-function(d, gene, min_ratio, ymax=5){
     #filter by min ratio
@@ -155,4 +130,4 @@ p3=violin_p(dat3, gene="Itgav", min_ratio = 0, ymax=5)
 p4=violin_p(dat4, gene="Itgav", min_ratio = 0, ymax=5)
 
 p1+p3+p2+p4
-ggsave(file="../figures/revision/Spp1_Itgav_sing_doub_violin_f.pdf", width=8, height=6, dpi=300)
+ggsave(file="../figures/revision/FS4/FS4AB.pdf", width=8, height=6, dpi=300)

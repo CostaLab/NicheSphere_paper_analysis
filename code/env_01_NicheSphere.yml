@@ -1,0 +1,20 @@
+name: PILOT_dev
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.6.1
+  - python=3.12
+  - jupyterlab=4.6.2
+  - pygraphviz=1.14
+  - git=2.55.0
+  - matplotlib-venn=1.1.2
+  - pip
+  - pip:
+      - git+https://github.com/CostaLab/NicheSphere.git@dev
+      - pilotpy==2.0.15
+      - pycrosstalker==2.1.6
+      - community-layout==1.0.6
+      - magic-impute==3.0.0
+      - liana==1.8.1
+      - decoupler==2.2.0
+      - gravis==0.1.0
