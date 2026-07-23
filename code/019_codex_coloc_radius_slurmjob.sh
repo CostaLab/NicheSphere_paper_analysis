@@ -16,5 +16,5 @@
 #SBATCH --output=output.%J.out
 
 #Run something
-#conda activate CODEX_env
-python ./018_CODEX_coloc_radius.py
+#conda activate new_NicheSphere_env
+python ./019_CODEX_coloc_radius.py
