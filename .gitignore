@@ -3,3 +3,4 @@ data/
 res_data/revision/output_ctkr/PICseq/PICseq_analysed.h5ad
 **/.ipynb_checkpoints/
 **/__pycache__/
+*.zip
